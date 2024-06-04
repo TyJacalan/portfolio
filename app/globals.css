@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 237, 234, 222;
+  --secondary: 135, 135, 73;
+  --tertiary: 86, 186, 156;
+  --foreground: 46, 46, 25;
+  --muted: 111, 111, 97;
+  --accent: 232, 232, 212;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--primary))
+    )
+    rgb(var(--accent));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
