@@ -13,16 +13,18 @@
 
 body {
   color: rgb(var(--foreground));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--primary))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--primary)))
     rgb(var(--accent));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-vertical {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
   }
 }

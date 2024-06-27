@@ -13,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${libreFranklin.className} min-h-screen max-w-screen overflow-x-hidden`}>
+      <body
+        className={`${libreFranklin.className} h-full max-w-screen overflow-x-hidden`}
+      >
         <Navbar />
         {children}
         <Footer />
