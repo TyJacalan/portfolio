@@ -1,11 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react'
+import React from "react";
 
 const About = () => {
-  return (
-    <section>About</section>
-  )
-}
+  return <section className="container h-screen w-full">About</section>;
+};
 
-export default About
+export default About;
