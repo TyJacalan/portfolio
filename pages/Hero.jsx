@@ -76,9 +76,9 @@ const Hero = () => {
             className="flex flex-col gap-4"
           >
             <p>
-              I enjoy building applications that brings value to people's lives,
-              whether it's in niche communities or to an audience of hundreds of
-              thousands of people.
+              I enjoy building applications that brings value to people&apos;s
+              lives, whether it's in niche communities or to an audience of
+              hundreds of thousands of people.
             </p>
             <div class="flex flex-row flex-wrap gap-2 items-center">
               <p>I use daily </p>
