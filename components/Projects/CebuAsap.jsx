@@ -48,10 +48,11 @@ const CebuAsap = () => {
           </div>
           <div className="flex flex-col gap-4 p-6 sm:px-24 bg-gradient-to-b from-primary to-accent">
             <p>
-              Since it's founding in 1994, Cebu Asap Advertising and Events has
-              established itself as the creative powerhouse of the VisMin region
-              with a clientele that includes some of the countries largest
-              companies including Toyota, PLDT, and the Department of Tourism.
+              Since it&apos;s founding in 1994, Cebu Asap Advertising and Events
+              has established itself as the creative powerhouse of the VisMin
+              region with a clientele that includes some of the countries
+              largest companies including Toyota, PLDT, and the Department of
+              Tourism.
             </p>
             <p>
               Cebu Asap Advertising and Events approached me while they were

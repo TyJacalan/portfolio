@@ -114,7 +114,7 @@ const AvionFi = () => {
             <p>
               I used ActiveRecord Transacions to manage buying and selling
               stocks. This system maps stocks, create transactions, and updates
-              the user's wallet balance efficiently.
+              the user&apos;s wallet balance efficiently.
             </p>
           </div>
           <div className="p-6 md:px-24 pb-12">
