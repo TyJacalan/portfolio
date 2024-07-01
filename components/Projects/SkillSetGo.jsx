@@ -38,7 +38,7 @@ const SkillSetGo = () => {
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
-              src="/SkillSetGo.jpg"
+              src="/skillsetgo.jpeg"
               alt="SkillSetGo"
               height={360}
               width={500}

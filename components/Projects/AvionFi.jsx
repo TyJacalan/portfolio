@@ -76,7 +76,7 @@ const AvionFi = () => {
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
-              src="/AvionFi.jpg"
+              src="/avionfi.jpeg"
               alt="AvionFi"
               height={360}
               width={500}

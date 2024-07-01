@@ -36,7 +36,7 @@ const Rooms = () => {
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
-              src="/Rooms.jpg"
+              src="/rooms.jpeg"
               alt="Rooms"
               height={360}
               width={500}
