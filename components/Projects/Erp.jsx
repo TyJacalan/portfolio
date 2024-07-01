@@ -10,20 +10,21 @@ const Erp = () => {
         title="Enterprise Resource Planning System Project"
         trigger={
           <motion.div
-            initial={{ opacity: 0, translateX: "-100%" }}
-            whileInView={{ opacity: 1, translateX: 0 }}
+            initial={{ opacity: 0, translateY: "25%" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
             transition={{
-              duration: 1.2,
+              delay: 2.2,
+              duration: 0.8,
               ease: "easeInOut",
             }}
             className="flex h-full w-full rounded-md overflow-hidden"
           >
             <Image
-              src="/AvionFi.jpg"
+              src="/erp.png"
               alt="Erp System Project"
               height={360}
               width={500}
-              className="object-cover"
+              className="object-cover hover:-rotate-2 hover:scale-105 transition-transform"
             />
           </motion.div>
         }
@@ -37,7 +38,7 @@ const Erp = () => {
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
-              src="/AvionFi.jpg"
+              src="/erp.jpeg"
               alt="Erp System Project"
               height={360}
               width={500}

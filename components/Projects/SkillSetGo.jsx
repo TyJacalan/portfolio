@@ -10,21 +10,21 @@ const SkillSetGo = () => {
         title="SkillSetGo"
         trigger={
           <motion.div
-            initial={{ opacity: 0, translateX: "50%" }}
-            whileInView={{ opacity: 1, translateX: 0 }}
+            initial={{ opacity: 0, translateY: "-25%" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
             transition={{
-              delay: 0.5,
-              duration: 0.7,
+              delay: 2.2,
+              duration: 0.8,
               ease: "easeInOut",
             }}
             className="flex h-full w-full rounded-md overflow-hidden"
           >
             <Image
-              src="/SkillSetGo.jpg"
+              src="/skillsetgo.png"
               alt="SkillSetGo"
               height={360}
               width={500}
-              className="object-cover"
+              className="object-cover hover:-rotate-2 hover:scale-105 transition-transform"
             />
           </motion.div>
         }

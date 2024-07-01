@@ -18,7 +18,7 @@ const Dialog = ({ title, children, trigger }) => {
 
   return (
     <>
-      <div className="h-full w-full" onClick={handleOpenDialog}>
+      <div className="h-full w-full cursor-pointer" onClick={handleOpenDialog}>
         {trigger}
       </div>
       {isOpen && (

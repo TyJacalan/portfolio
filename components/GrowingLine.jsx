@@ -7,7 +7,7 @@ const variants = {
   left: "top-0 left-0 h-full border-l border-l-secondary",
 };
 
-export default function GridLine({ variant, duration = 1.2, delay = 0.3 }) {
+export default function GrowingLine({ variant, duration = 1.2, delay = 0.3 }) {
   const variantClass = variants[variant];
 
   const isVertical = variant === "right" || variant === "left";

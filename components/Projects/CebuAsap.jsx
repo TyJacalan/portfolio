@@ -9,21 +9,21 @@ const CebuAsap = () => {
         title="Cebu Asap Advertising & Events"
         trigger={
           <motion.div
-            initial={{ opacity: 0, translateX: "-100%" }}
+            initial={{ opacity: 0, translateX: "-25%" }}
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{
-              delay: 0.5,
-              duration: 0.7,
+              delay: 2.2,
+              duration: 0.8,
               ease: "easeInOut",
             }}
             className="flex h-full w-full rounded-md overflow-hidden"
           >
             <Image
-              src="/CebuAsap.png"
+              src="/cebuasap.png"
               alt="CebuAsap"
               height={360}
               width={500}
-              className="object-cover"
+              className="object-cover hover:-rotate-2 hover:scale-105 transition-transform"
             />
           </motion.div>
         }
@@ -39,7 +39,7 @@ const CebuAsap = () => {
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
-              src="/CebuAsap.png"
+              src="/cebuasap.jpeg"
               alt="CebuAsap"
               height={360}
               width={500}
