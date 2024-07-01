@@ -78,9 +78,9 @@ const Technologies = () => {
     >
       <ul className="flex flex-row flex-nowrap items-center justify-start gap-4 text-lg md:text-2xl lg:text-4xl">
         {technologyItems.map((item, index) => (
-          <Tooltip>
+          <Tooltip key={index}>
             <Tooltip.Trigger>
-              <li key={index}>{item.logo}</li>
+              <li>{item.logo}</li>
             </Tooltip.Trigger>
             <Tooltip.Content>{item.name}</Tooltip.Content>
           </Tooltip>
