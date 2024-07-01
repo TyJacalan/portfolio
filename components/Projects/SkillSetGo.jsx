@@ -5,6 +5,8 @@ import Link from "next/link";
 import Chip from "../Chip";
 import Dialog from "../Dialog";
 
+import { FaGithub } from "react-icons/fa";
+
 const technologies = [
   "Ruby on Rails",
   "Turbo Stimulus",
@@ -39,6 +41,21 @@ const SkillSetGo = () => {
         }
       >
         <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+          <div className="flex flex-row items-center justify-center gap-4">
+            <Link
+              href="https://github.com/TyJacalan/booking-app"
+              target="_blank"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              href="https://booking-app-vuo9.onrender.com"
+              target="_blank"
+              className="underline hover:font-semibold"
+            >
+              Live
+            </Link>
+          </div>
           <div className="px-6 sm:px-24">
             <p class="text-muted">
               An appointment scheduling app tailored specifically for

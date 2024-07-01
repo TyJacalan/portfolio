@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import Chip from "../Chip";
 import Dialog from "../Dialog";
+
+import { FaGithub } from "react-icons/fa";
 
 const technologies = ["ReactJs", "Tailwind CSS", "Shadcn", "Axios"];
 
@@ -32,7 +35,19 @@ const Rooms = () => {
           </motion.div>
         }
       >
-        <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+        <div className="flex flex-col gap-4 mt-4 text-sm text-center">
+          <div className="flex flex-row items-center justify-center gap-4">
+            <Link href="https://github.com/TyJacalan/slack-app" target="_blank">
+              <FaGithub />
+            </Link>
+            <Link
+              href="https://rooms-navy.vercel.app/"
+              target="_blank"
+              className="underline hover:font-semibold"
+            >
+              Live
+            </Link>
+          </div>
           <div className="px-6 sm:px-24">
             <p class="text-muted">
               A messaging application that uses an api built by Avion School

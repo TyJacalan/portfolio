@@ -5,6 +5,8 @@ import Link from "next/link";
 import Chip from "../Chip";
 import Dialog from "../Dialog";
 
+import { FaGithub } from "react-icons/fa";
+
 const technologies = [
   "Ruby on Rails",
   "Turbo Stimulus",
@@ -69,6 +71,14 @@ const AvionFi = () => {
         }
       >
         <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+          <div className="flex flex-row items-center justify-center gap-4">
+            <Link
+              href="https://github.com/TyJacalan/trading-app"
+              target="_blank"
+            >
+              <FaGithub />
+            </Link>
+          </div>
           <div className="px-6 sm:px-24">
             <p class="text-muted">
               A stock trading application that leverages real-world stock market
