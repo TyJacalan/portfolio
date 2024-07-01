@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Dialog from "../Dialog";
 import Link from "next/link";
+
+import Chip from "../Chip";
+import Dialog from "../Dialog";
+
+const technologies = [
+  "Ruby on Rails",
+  "Turbo Stimulus",
+  "Tailwind CSS",
+  "Shadcn",
+];
 
 const AvionFi = () => {
   return (
@@ -59,8 +68,8 @@ const AvionFi = () => {
           </>
         }
       >
-        <div class="flex flex-col gap-2 mt-4 text-sm text-center">
-          <div className="p-6 sm:px-24">
+        <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+          <div className="px-6 sm:px-24">
             <p class="text-muted">
               A stock trading application that leverages real-world stock market
               information data from{" "}
@@ -73,6 +82,11 @@ const AvionFi = () => {
               </Link>
               .
             </p>
+          </div>
+          <div className="flex flex-row justify-center gap-2 text-xs">
+            {technologies.map((technology, index) => (
+              <Chip key={index}>{technology}</Chip>
+            ))}
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image

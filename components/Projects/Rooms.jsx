@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+
+import Chip from "../Chip";
 import Dialog from "../Dialog";
+
+const technologies = ["ReactJs", "Tailwind CSS", "Shadcn", "Axios"];
 
 const Rooms = () => {
   return (
@@ -28,11 +32,16 @@ const Rooms = () => {
           </motion.div>
         }
       >
-        <div class="flex flex-col gap-2 mt-4 text-sm text-center">
-          <div className="p-6 sm:px-24">
+        <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+          <div className="px-6 sm:px-24">
             <p class="text-muted">
               A messaging application that uses an api built by Avion School
             </p>
+          </div>
+          <div className="flex flex-row justify-center gap-2 text-xs">
+            {technologies.map((technology, index) => (
+              <Chip key={index}>{technology}</Chip>
+            ))}
           </div>
           <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
