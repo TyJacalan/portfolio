@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import GrowingLine from "@/components/GrowingLine";
+import DailyTechnologies from "@/components/DailyTechnologies";
 import Technologies from "@/components/Technologies";
 
 const Hero = () => {
@@ -40,12 +41,17 @@ const Hero = () => {
             }}
             className="flex flex-col items-start justify-center sm:gap-2 md:gap-4 p-4 text-vertical"
           >
-            <Link href="https://github.com/TyJacalan" target="_blank">
+            <Link
+              href="https://github.com/TyJacalan"
+              target="_blank"
+              className="hover:tracking-wider hover:scale-105 transition-transform"
+            >
               Github
             </Link>
             <Link
               href="https://www.linkedin.com/in/ty-j-2772281a4/"
               target="_blank"
+              className="hover:tracking-wider hover:scale-105 transition-transform"
             >
               LinkedIn
             </Link>
@@ -59,7 +65,26 @@ const Hero = () => {
           <GrowingLine variant="right" delay={2} duration={1} />
           <GrowingLine variant="bottom" delay={2} duration={1} />
         </div>
-        <div className="relative col-span-8 row-span-5 h-full w-full">
+        <div className="relative col-span-8 row-span-5 h-full w-full p-4">
+          <motion.div
+            initial={{ opacity: 0, translateY: "-25%" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{
+              delay: 2,
+              ease: "easeInOut",
+            }}
+            className="flex flex-col gap-4"
+          >
+            <p>
+              I enjoy building applications that brings value to people's lives,
+              whether it's in niche communities or to an audience of hundreds of
+              thousands of people.
+            </p>
+            <div class="flex flex-row flex-wrap gap-2 items-center">
+              <p>I use daily </p>
+              <DailyTechnologies />
+            </div>
+          </motion.div>
           <GrowingLine variant="left" delay={2} duration={1} />
           <GrowingLine variant="right" delay={2.6} duration={0.4} />
         </div>
