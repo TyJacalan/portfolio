@@ -77,7 +77,7 @@ const Hero = () => {
           >
             <p>
               I enjoy building applications that brings value to people&apos;s
-              lives, whether it's in niche communities or to an audience of
+              lives, whether it&apos;s in niche communities or to an audience of
               hundreds of thousands of people.
             </p>
             <div class="flex flex-row flex-wrap gap-2 items-center">
