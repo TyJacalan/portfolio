@@ -1,6 +1,5 @@
 import { Libre_Franklin } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const libreFranklin = Libre_Franklin({ subsets: ["latin"] });
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${libreFranklin.className} h-full max-w-screen overflow-x-hidden`}
       >
-        <Navbar />
         {children}
         <Footer />
       </body>
