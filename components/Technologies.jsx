@@ -9,12 +9,22 @@ import {
   SiJavascript,
   SiPostgresql,
   SiReact,
+  SiRuby,
   SiRubyonrails,
   SiSass,
   SiTailwindcss,
 } from "react-icons/si";
+import Tooltip from "./Tooltip";
 
 const technologyItems = [
+  {
+    name: "Ruby",
+    logo: <SiRuby />,
+  },
+  {
+    name: "Ruby on Rails",
+    logo: <SiRubyonrails />,
+  },
   {
     name: "JavaScript",
     logo: <SiJavascript />,
@@ -26,14 +36,6 @@ const technologyItems = [
   {
     name: "NextJs",
     logo: <RiNextjsLine />,
-  },
-  {
-    name: "Ruby on Rails",
-    logo: <SiRubyonrails />,
-  },
-  {
-    name: "Postgresql",
-    logo: <SiPostgresql />,
   },
   {
     name: "HTML5",
@@ -52,6 +54,10 @@ const technologyItems = [
     logo: <SiSass />,
   },
   {
+    name: "Postgresql",
+    logo: <SiPostgresql />,
+  },
+  {
     name: "Git",
     logo: <SiGit />,
   },
@@ -68,11 +74,16 @@ const Technologies = () => {
         duration: 2,
         delay: 1.2,
       }}
-      className="flex p-4 overflow-hidden"
+      className="flex p-4"
     >
       <ul className="flex flex-row flex-nowrap items-center justify-start gap-4 text-lg md:text-2xl lg:text-4xl">
         {technologyItems.map((item, index) => (
-          <li key={index}>{item.logo}</li>
+          <Tooltip>
+            <Tooltip.Trigger>
+              <li key={index}>{item.logo}</li>
+            </Tooltip.Trigger>
+            <Tooltip.Content>{item.name}</Tooltip.Content>
+          </Tooltip>
         ))}
       </ul>
     </motion.div>
