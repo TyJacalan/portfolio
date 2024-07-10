@@ -48,13 +48,6 @@ const SkillSetGo = () => {
             >
               <FaGithub />
             </Link>
-            <Link
-              href="https://booking-app-vuo9.onrender.com"
-              target="_blank"
-              className="underline hover:font-semibold"
-            >
-              Live
-            </Link>
           </div>
           <div className="px-6 sm:px-24">
             <p class="text-muted">
