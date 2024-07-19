@@ -30,7 +30,7 @@ const Rooms = () => {
               alt="Rooms"
               height={360}
               width={500}
-              className="object-cover hover:-rotate-2 hover:scale-105 transition-transform"
+              className="object-cover hover:scale-105 transition-transform"
             />
           </motion.div>
         }

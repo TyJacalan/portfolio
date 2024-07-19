@@ -36,37 +36,9 @@ const AvionFi = () => {
                 alt="AvionFi"
                 height={360}
                 width={500}
-                className="object-cover hover:-rotate-2 hover:scale-105 transition-transform"
+                className="object-cover hover:scale-105 transition-transform"
               />
             </motion.div>
-            <motion.img
-              initial={{ opacity: 0, rotate: -20, translateX: "100%" }}
-              whileInView={{ opacity: 1, rotate: 0, translateX: "0%" }}
-              transition={{
-                delay: 1.2,
-                duration: 1.2,
-                ease: "easeInOut",
-              }}
-              src="/leaf_blurred.png"
-              alt="leaf"
-              height={150}
-              width={150}
-              className="absolute top-0 right-[-15%] sm:right-[-10%] object-cover"
-            />
-            <motion.img
-              initial={{ opacity: 0, rotate: 200, translateX: "-100%" }}
-              whileInView={{ opacity: 1, rotate: 180, translateX: "0%" }}
-              transition={{
-                delay: 1.2,
-                duration: 1.2,
-                ease: "easeInOut",
-              }}
-              src="/leaf_blurred.png"
-              alt="leaf"
-              height={200}
-              width={200}
-              className="absolute top-0 left-[-20%] sm:left-[-15%] object-cover"
-            />
           </>
         }
       >
