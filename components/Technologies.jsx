@@ -14,7 +14,6 @@ import {
   SiSass,
   SiTailwindcss,
 } from "react-icons/si";
-import Tooltip from "./Tooltip";
 
 const technologyItems = [
   {
@@ -76,14 +75,9 @@ const Technologies = () => {
       }}
       className="flex p-4"
     >
-      <ul className="flex flex-row flex-nowrap items-center justify-start gap-4 text-lg md:text-2xl lg:text-4xl">
-        {technologyItems.map((item, index) => (
-          <Tooltip key={index}>
-            <Tooltip.Trigger>
-              <li>{item.logo}</li>
-            </Tooltip.Trigger>
-            <Tooltip.Content>{item.name}</Tooltip.Content>
-          </Tooltip>
+      <ul className="flex flex-row flex-nowrap items-center justify-start gap-4 text-lg md:text-2xl lg:text-4xl overflow-hidden">
+        {technologyItems.map((item) => (
+          <li key={item.name}>{item.logo}</li>
         ))}
       </ul>
     </motion.div>
