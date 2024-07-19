@@ -21,12 +21,12 @@ const Projects = () => {
         initial={{ opacity: 0, translateY: "-100%" }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 1.2 }}
-        className="w-full sm:w-[750px] flex flex-row gap-2 items-end justify-start"
+        className="w-full flex flex-row gap-2 items-end justify-start"
       >
         <span className="text-xl md:text-2xl text-muted">02 / </span>
         <h2 className="text-3xl md:text-6xl font-thin">Projects</h2>
       </motion.div>
-      <div className="relative h-[60%] w-full sm:w-[750px] grid grid-cols-12 grid-rows-12">
+      <div className="relative h-[70%] w-full grid grid-cols-12 grid-rows-12">
         <GrowingLine variant="top" />
         <div className="relative col-span-8 row-span-8 overflow-hidden">
           <AvionFi />
