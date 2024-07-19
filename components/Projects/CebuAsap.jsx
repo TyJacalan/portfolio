@@ -19,7 +19,7 @@ const CebuAsap = () => {
   return (
     <>
       <Dialog>
-        <DialogTrigger>
+        <DialogTrigger className="h-full w-full">
           <motion.div
             initial={{ opacity: 0, translateX: "-25%" }}
             whileInView={{ opacity: 1, translateX: 0 }}
@@ -28,7 +28,7 @@ const CebuAsap = () => {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="flex h-full w-full rounded-md overflow-hidden"
+            className="flex h-full w-full items-center rounded-md overflow-hidden"
           >
             <Image
               src="/cebuasap.png"

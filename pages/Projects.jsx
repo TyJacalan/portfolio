@@ -28,7 +28,7 @@ const Projects = () => {
       </motion.div>
       <div className="relative h-[70%] w-full grid grid-cols-12 grid-rows-12">
         <GrowingLine variant="top" />
-        <div className="relative col-span-8 row-span-8 overflow-hidden">
+        <div className="relative col-span-8 row-span-7 overflow-hidden">
           <AvionFi />
           <GrowingLine variant="right" delay={0.8} duration={1.4} />
           <GrowingLine variant="bottom" delay={0.4} duration={1.8} />
@@ -40,11 +40,11 @@ const Projects = () => {
           <Rooms />
           <GrowingLine variant="top" delay={1.2} duration={0.8} />
         </div>
-        <div className="relative col-span-4 row-span-4 overflow-hidden">
+        <div className="relative col-span-4 row-span-5 overflow-hidden">
           <CebuAsap />
           <GrowingLine variant="right" delay={1.2} duration={1.8} />
         </div>
-        <div className="relative col-span-4 row-span-6 overflow-hidden">
+        <div className="relative col-span-4 row-span-5 overflow-hidden">
           <Erp />
           <GrowingLine variant="right" delay={2} duration={1} />
         </div>

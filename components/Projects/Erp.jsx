@@ -22,7 +22,7 @@ const Erp = () => {
   return (
     <>
       <Dialog>
-        <DialogTrigger>
+        <DialogTrigger className="h-full w-full">
           <motion.div
             initial={{ opacity: 0, translateY: "25%" }}
             whileInView={{ opacity: 1, translateY: 0 }}
@@ -31,7 +31,7 @@ const Erp = () => {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="flex h-full w-full rounded-md overflow-hidden"
+            className="flex h-full w-full items-center rounded-md overflow-hidden"
           >
             <Image
               src="/erp.png"

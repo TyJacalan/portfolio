@@ -25,7 +25,7 @@ const AvionFi = () => {
   return (
     <>
       <Dialog>
-        <DialogTrigger>
+        <DialogTrigger className="h-full w-full">
           <motion.div
             initial={{ opacity: 0, translateY: "25%" }}
             whileInView={{ opacity: 1, translateY: 0 }}
@@ -34,7 +34,7 @@ const AvionFi = () => {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="relative flex h-full w-full"
+            className="relative flex h-full w-full justify-center"
           >
             <Image
               src="/avionfi.png"
