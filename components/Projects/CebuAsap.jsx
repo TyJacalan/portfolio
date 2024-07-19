@@ -35,7 +35,7 @@ const CebuAsap = () => {
           </motion.div>
         }
       >
-        <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+        <div className="flex flex-col gap-4 mt-4 text-sm text-center">
           <div className="flex flex-row items-center justify-center gap-4">
             <Link href="https://github.com/TyJacalan/asap" target="_blank">
               <FaGithub />
@@ -49,7 +49,7 @@ const CebuAsap = () => {
             </Link>
           </div>
           <div className="px-6 sm:px-24">
-            <p class="text-muted">
+            <p className="text-muted">
               A landing page for a company seeking to pioneer the future of
               events and advertising, crafting immersive experiences and
               cutting-edge campaigns that brings brands to life and cativate
@@ -61,7 +61,7 @@ const CebuAsap = () => {
               <Chip key={index}>{technology}</Chip>
             ))}
           </div>
-          <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
+          <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
               src="/cebuasap.jpeg"
               alt="CebuAsap"

@@ -42,7 +42,7 @@ const AvionFi = () => {
           </>
         }
       >
-        <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+        <div className="flex flex-col gap-4 mt-4 text-sm text-center">
           <div className="flex flex-row items-center justify-center gap-4">
             <Link
               href="https://github.com/TyJacalan/trading-app"
@@ -52,7 +52,7 @@ const AvionFi = () => {
             </Link>
           </div>
           <div className="px-6 sm:px-24">
-            <p class="text-muted">
+            <p className="text-muted">
               A stock trading application that leverages real-world stock market
               information data from{" "}
               <Link
@@ -70,7 +70,7 @@ const AvionFi = () => {
               <Chip key={index}>{technology}</Chip>
             ))}
           </div>
-          <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
+          <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
               src="/avionfi.jpeg"
               alt="AvionFi"
@@ -81,8 +81,8 @@ const AvionFi = () => {
           </div>
           <div className="flex justify-center bg-gradient-to-b from-primary to-accent">
             <div className="max-w-[750px] flex flex-col items-center gap-4 p-6 sm:px-24">
-              <h3 class="text-xl">Highlights</h3>
-              <h4 class="font-bold">User Authentication</h4>
+              <h3 className="text-xl">Highlights</h3>
+              <h4 className="font-bold">User Authentication</h4>
               <p>
                 I used the{" "}
                 <Link
@@ -96,7 +96,7 @@ const AvionFi = () => {
                 customized the Devise controllers to create separate
                 authentication routes for traders and admins.
               </p>
-              <h4 class="font-bold">Admin Console</h4>
+              <h4 className="font-bold">Admin Console</h4>
               <p>
                 Admins have a dedicated console where they can perform all the
                 CRUD actions they need for different models. I used ActiveMailer
@@ -107,7 +107,7 @@ const AvionFi = () => {
                 </Link>{" "}
                 to display key data visually.
               </p>
-              <h4 class="font-bold">Transaction System</h4>
+              <h4 className="font-bold">Transaction System</h4>
               <p>
                 I used ActiveRecord Transacions to manage buying and selling
                 stocks. This system maps stocks, create transactions, and

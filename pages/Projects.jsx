@@ -26,25 +26,25 @@ const Projects = () => {
         <span className="text-xl md:text-2xl text-muted">02 / </span>
         <h2 className="text-3xl md:text-6xl font-thin">Projects</h2>
       </motion.div>
-      <div class="relative h-[60%] w-full sm:w-[750px] grid grid-cols-12 grid-rows-12">
+      <div className="relative h-[60%] w-full sm:w-[750px] grid grid-cols-12 grid-rows-12">
         <GrowingLine variant="top" />
-        <div class="relative col-span-8 row-span-8 overflow-hidden">
+        <div className="relative col-span-8 row-span-8 overflow-hidden">
           <AvionFi />
           <GrowingLine variant="right" delay={0.8} duration={1.4} />
           <GrowingLine variant="bottom" delay={0.4} duration={1.8} />
         </div>
-        <div class="relative col-span-4 row-span-4 overflow-hidden">
+        <div className="relative col-span-4 row-span-4 overflow-hidden">
           <SkillSetGo />
         </div>
-        <div class="relative col-span-4 row-span-8 overflow-hidden">
+        <div className="relative col-span-4 row-span-8 overflow-hidden">
           <Rooms />
           <GrowingLine variant="top" delay={1.2} duration={0.8} />
         </div>
-        <div class="relative col-span-4 row-span-4 overflow-hidden">
+        <div className="relative col-span-4 row-span-4 overflow-hidden">
           <CebuAsap />
           <GrowingLine variant="right" delay={1.2} duration={1.8} />
         </div>
-        <div class="relative col-span-4 row-span-6 overflow-hidden">
+        <div className="relative col-span-4 row-span-6 overflow-hidden">
           <Erp />
           <GrowingLine variant="right" delay={2} duration={1} />
         </div>

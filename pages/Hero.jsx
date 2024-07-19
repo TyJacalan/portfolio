@@ -76,11 +76,11 @@ const Hero = () => {
             className="flex flex-col gap-4"
           >
             <p>
-              I enjoy building applications that brings value to people&apos;s
+              I enjoy building applications that bring value to people&apos;s
               lives, whether it&apos;s in niche communities or to an audience of
               hundreds of thousands of people.
             </p>
-            <div class="flex flex-row flex-wrap gap-2 items-center">
+            <div className="flex flex-row flex-wrap gap-2 items-center">
               <p>I use daily </p>
               <DailyTechnologies />
             </div>

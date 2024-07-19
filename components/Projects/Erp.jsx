@@ -38,9 +38,9 @@ const Erp = () => {
           </motion.div>
         }
       >
-        <div class="flex flex-col gap-4 mt-4 text-sm text-center">
+        <div className="flex flex-col gap-4 mt-4 text-sm text-center">
           <div className="px-6 sm:px-24">
-            <p class="text-muted">
+            <p className="text-muted">
               A MVP for an all-in-one application to manage company resources
               and complex workflows.
             </p>
@@ -50,7 +50,7 @@ const Erp = () => {
               <Chip key={index}>{technology}</Chip>
             ))}
           </div>
-          <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
+          <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
               src="/erp.jpeg"
               alt="Erp System Project"
@@ -61,8 +61,8 @@ const Erp = () => {
           </div>
           <div className="flex justify-center bg-gradient-to-b from-primary to-accent">
             <div className="max-w-[750px] flex flex-col items-center gap-4 p-6 sm:px-24">
-              <h3 class="text-xl">Highlights</h3>
-              <h4 class="font-bold">User Role System</h4>
+              <h3 className="text-xl">Highlights</h3>
+              <h4 className="font-bold">User Role System</h4>
               <p>
                 To manage user roles and access control, I used the{" "}
                 <Link
@@ -77,7 +77,7 @@ const Erp = () => {
                 disabled public user registration and implemented an
                 invitation-only system.
               </p>
-              <h4 class="font-bold">Task Management System</h4>
+              <h4 className="font-bold">Task Management System</h4>
               <p>
                 The ERP System I developed serves a company with 50+ clients and
                 over 100 employees. Each client has a dedicated team, and users
@@ -86,7 +86,7 @@ const Erp = () => {
                 supports bulk task creation, allowing tasks to be efficiently
                 assigend to various clients and users simultaneously.
               </p>
-              <h4 class="font-bold">Complex Querying System</h4>
+              <h4 className="font-bold">Complex Querying System</h4>
               <p>
                 The application features intricate model associations, such as
                 Clients being associated with Organzations, which can have

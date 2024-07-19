@@ -49,7 +49,7 @@ const Rooms = () => {
             </Link>
           </div>
           <div className="px-6 sm:px-24">
-            <p class="text-muted">
+            <p className="text-muted">
               A messaging application that uses an api built by Avion School
             </p>
           </div>
@@ -58,7 +58,7 @@ const Rooms = () => {
               <Chip key={index}>{technology}</Chip>
             ))}
           </div>
-          <div class="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
+          <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
             <Image
               src="/rooms.jpeg"
               alt="Rooms"
@@ -69,20 +69,20 @@ const Rooms = () => {
           </div>
           <div className="flex justify-center bg-gradient-to-b from-primary to-accent">
             <div className="max-w-[750px] flex flex-col items-center gap-4 p-6 sm:px-24">
-              <h3 class="text-xl">Highlights</h3>
-              <h4 class="font-bold">User Authentication</h4>
+              <h3 className="text-xl">Highlights</h3>
+              <h4 className="font-bold">User Authentication</h4>
               <p>
                 Implemented user authentication using React Router to control
                 access to different parts of the application.
               </p>
-              <h4 class="font-bold">Messaging and Channel Creation</h4>
+              <h4 className="font-bold">Messaging and Channel Creation</h4>
               <p>
                 Built messaging and channel creation features using React Hooks
                 for efficient state management. Users can create new channels,
                 add other users to channels, send direct messages, and
                 communicate within channels.
               </p>
-              <h4 class="font-bold">API handling</h4>
+              <h4 className="font-bold">API handling</h4>
               <p>
                 Used the Provider Pattern to manage API interactions and data
                 flow within the application, helping in maintaining a clean
