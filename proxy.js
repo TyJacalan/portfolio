@@ -6,7 +6,7 @@ export function proxy(request) {
 
   const isPortfolio = hostname.startsWith("portfolio.");
 
-  if (!isPortfolio) {
+  if (isPortfolio) {
     url.pathname = "/portfolio";
     return NextResponse.rewrite(url);
   }
