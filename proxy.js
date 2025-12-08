@@ -1,13 +1,13 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export function proxy(request: NextRequest) {
+export function proxy(request) {
   const hostname = request.headers.get("host") || "";
   const url = request.nextUrl.clone();
 
   const isPortfolio = hostname.startsWith("portfolio.");
 
   if (!isPortfolio) {
-    url.pathname = "/portfolio";
+    url.pathname = "/coming-soon";
     return NextResponse.rewrite(url);
   }
 
