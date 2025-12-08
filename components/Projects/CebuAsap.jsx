@@ -31,7 +31,7 @@ const CebuAsap = () => {
             className="flex h-full w-full items-center rounded-md overflow-hidden"
           >
             <Image
-              src="/cebuasap.png"
+              src="/projects/cebuasap.png"
               alt="CebuAsap"
               height={360}
               width={500}
@@ -70,7 +70,7 @@ const CebuAsap = () => {
               </div>
               <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
                 <Image
-                  src="/cebuasap.jpeg"
+                  src="/projects/cebuasap.jpeg"
                   alt="CebuAsap"
                   height={360}
                   width={500}
