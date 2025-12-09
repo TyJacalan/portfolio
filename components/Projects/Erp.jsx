@@ -34,7 +34,7 @@ const Erp = () => {
             className="flex h-full w-full items-center rounded-md overflow-hidden"
           >
             <Image
-              src="/erp.png"
+              src="/projects/erp.png"
               alt="Erp System Project"
               height={360}
               width={500}
@@ -57,7 +57,7 @@ const Erp = () => {
               </div>
               <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
                 <Image
-                  src="/erp.jpeg"
+                  src="/projects/erp.jpeg"
                   alt="Erp System Project"
                   height={360}
                   width={500}

@@ -37,7 +37,7 @@ const AvionFi = () => {
             className="relative flex h-full w-full justify-center"
           >
             <Image
-              src="/avionfi.png"
+              src="/projects/avionfi.png"
               alt="AvionFi"
               height={360}
               width={500}
@@ -49,14 +49,6 @@ const AvionFi = () => {
           <DialogTitle>AvionFi</DialogTitle>
           <DialogDescription>
             <div className="flex flex-col gap-4 mt-4 text-sm text-center">
-              <div className="flex flex-row items-center justify-center gap-4">
-                <Link
-                  href="https://github.com/TyJacalan/trading-app"
-                  target="_blank"
-                >
-                  <FaGithub />
-                </Link>
-              </div>
               <div>
                 <p className="text-muted">
                   A stock trading application that leverages real-world stock
@@ -78,7 +70,7 @@ const AvionFi = () => {
               </div>
               <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
                 <Image
-                  src="/avionfi.jpeg"
+                  src="/projects/avionfi.jpeg"
                   alt="AvionFi"
                   height={360}
                   width={500}

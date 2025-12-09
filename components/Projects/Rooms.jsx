@@ -31,7 +31,7 @@ const Rooms = () => {
             className="flex h-full w-full items-center rounded-md overflow-hidden"
           >
             <Image
-              src="/rooms.png"
+              src="/projects/rooms.png"
               alt="Rooms"
               height={360}
               width={500}
@@ -43,21 +43,6 @@ const Rooms = () => {
           <DialogTitle>Rooms</DialogTitle>
           <DialogDescription>
             <div className="flex flex-col gap-4 mt-4 text-sm text-center">
-              <div className="flex flex-row items-center justify-center gap-4">
-                <Link
-                  href="https://github.com/TyJacalan/slack-app"
-                  target="_blank"
-                >
-                  <FaGithub />
-                </Link>
-                <Link
-                  href="https://rooms-navy.vercel.app/"
-                  target="_blank"
-                  className="underline hover:font-semibold"
-                >
-                  Live
-                </Link>
-              </div>
               <div className="text-muted">
                 A messaging application that uses an API built by Avion School
               </div>
@@ -68,7 +53,7 @@ const Rooms = () => {
               </div>
               <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
                 <Image
-                  src="/rooms.jpeg"
+                  src="/projects/rooms.jpeg"
                   alt="Rooms"
                   height={360}
                   width={500}

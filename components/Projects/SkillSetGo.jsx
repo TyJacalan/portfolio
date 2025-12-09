@@ -37,7 +37,7 @@ const SkillSetGo = () => {
             className="flex h-full w-full items-center rounded-md overflow-hidden"
           >
             <Image
-              src="/skillsetgo.png"
+              src="/projects/skillsetgo.png"
               alt="SkillSetGo"
               height={360}
               width={500}
@@ -49,21 +49,6 @@ const SkillSetGo = () => {
           <DialogTitle>SkillSetGo</DialogTitle>
           <DialogDescription>
             <div className="flex flex-col gap-4 mt-4 text-sm text-center">
-              <div className="flex flex-row items-center justify-center gap-4">
-                <Link
-                  href="https://github.com/TyJacalan/booking-app"
-                  target="_blank"
-                >
-                  <FaGithub />
-                </Link>
-                <Link
-                  href="https://booking-app-j4vu.onrender.com"
-                  target="_blank"
-                  className="underline hover:font-semibold"
-                >
-                  Live
-                </Link>
-              </div>
               <div className="text-muted">
                 An appointment scheduling app tailored specifically for
                 freelancers and clients in the Philippines.
@@ -75,7 +60,7 @@ const SkillSetGo = () => {
               </div>
               <div className="h-auto w-fit mx-auto overflow-hidden rounded-md mb-6">
                 <Image
-                  src="/skillsetgo.jpeg"
+                  src="/projects/skillsetgo.jpeg"
                   alt="SkillSetGo"
                   height={360}
                   width={500}
