@@ -25,4 +25,16 @@ body {
     text-orientation: upright;
     text-transform: uppercase;
   }
+
+  .font-libre-franklin {
+    font-family: "Libre Franklin"
+  }
+
+  .font-roboto {
+    font-family: "Roboto"
+  }
+
+  .font-bitcount {
+    font-family: "Bitcount Prop Single"
+  }
 }

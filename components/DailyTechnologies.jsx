@@ -14,7 +14,7 @@ const fileTypes = [
 
 const DailyTechnologies = () => {
   return (
-    <ul className="flex flex-row flex-wrap gap-2">
+    <ul className="flex flex-row flex-wrap gap-2 font-bitcount">
       {fileTypes.map((type, index) => (
         <li key={index}>
           <Chip>{type}</Chip>
