@@ -1,6 +1,5 @@
-import About from "@/pages/About";
-import Hero from "@/pages/Hero";
-import Projects from "@/pages/Projects";
+import Hero from "@/pages/portfolio/Hero";
+import Projects from "@/pages/portfolio/Projects";
 
 export default function Home() {
   return (
