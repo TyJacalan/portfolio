@@ -7,6 +7,10 @@
   --color-foreground: rgb(46, 46, 25);
   --color-muted: rgb(111, 111, 97);
   --color-accent: rgb(232, 232, 212);
+
+  --font-libre-franklin: var(--font-libre-franklin), sans-serif;
+  --font-roboto: var(--font-roboto), sans-serif;
+  --font-bitcount: var(--font-bitcount), monospace;
 }
 
 @layer base {
@@ -24,17 +28,5 @@
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-transform: uppercase;
-  }
-
-  .font-libre-franklin {
-    font-family: "Libre Franklin"
-  }
-
-  .font-roboto {
-    font-family: "Roboto"
-  }
-
-  .font-bitcount {
-    font-family: "Bitcount Prop Single"
   }
 }
