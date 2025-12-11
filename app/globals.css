@@ -11,6 +11,7 @@
   --font-libre-franklin: var(--font-libre-franklin), sans-serif;
   --font-roboto: var(--font-roboto), sans-serif;
   --font-bitcount: var(--font-bitcount), monospace;
+  --font-russo: var(--font-russo), monospace;
 }
 
 @layer base {
@@ -28,5 +29,9 @@
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-transform: uppercase;
+  }
+
+  .text-upright {
+    text-orientation: upright;
   }
 }
