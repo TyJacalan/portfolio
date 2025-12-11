@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Bitcount_Prop_Single, Libre_Franklin, Roboto } from "next/font/google";
+import { Bitcount_Prop_Single, Libre_Franklin, Roboto, Russo_One } from "next/font/google";
 
 import Footer from "@/components/Footer";
 
@@ -20,6 +20,14 @@ const bitcount = Bitcount_Prop_Single({
   display: "swap",
   variable: "--font-bitcount"
 });
+
+const russo = Russo_One({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-russo"
+});
+
 
 
 export const metadata = {
