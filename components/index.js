@@ -1,0 +1,1 @@
+export { GeospatialInformation } from "./GeospatialInformation";
