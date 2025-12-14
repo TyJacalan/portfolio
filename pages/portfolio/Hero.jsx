@@ -3,9 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import GrowingLine from "@/components/GrowingLine";
-import DailyTechnologies from "@/components/DailyTechnologies";
-import Technologies from "@/components/Technologies";
+import { GrowingLine } from "@/components/Common";
+import { DailyTechnologies, Technologies } from "@/components"
 
 const Hero = () => {
   return (

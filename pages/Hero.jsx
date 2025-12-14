@@ -5,12 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import DailyTechnologies from "@/components/DailyTechnologies";
-import GrowingLine from "@/components/GrowingLine";
-import Navbar from "@/components/Navbar";
-import Technologies from "@/components/Technologies";
-import Services from "@/components/Services";
-import { GeospatialInformation } from "@/components";
+import { GrowingLine } from "@/components/Common";
+import {
+  DailyTechnologies,
+  GeospatialInformation,
+  Navbar,
+  Technologies,
+  Services,
+} from "@/components";
 
 import FadeIn from "@/components/Animations/FadeIn";
 import FadeInLetters from "@/components/Animations/FadeInLetters";
@@ -41,14 +43,14 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
           >
-          <Image
-            src="/misc/contour-pattern.png"
-            alt="contour pattern"
-            height={500}
-            width={500}
-            className="absolute top-15 -right-40 rotate-300 filter grayscale opacity-20"
-          />
-    </motion.div>
+            <Image
+              src="/misc/contour-pattern.png"
+              alt="contour pattern"
+              height={500}
+              width={500}
+              className="absolute top-15 -right-40 rotate-300 filter grayscale opacity-20"
+            />
+          </motion.div>
           <NameSection />
           <GrowingLine variant="right" delay={0.8} />
           <GrowingLine variant="left" />

@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Bitcount_Prop_Single, Libre_Franklin, Roboto, Russo_One } from "next/font/google";
 
-import Footer from "@/components/Footer";
+import { Footer } from "@/components";
 
 const libreFranklin = Libre_Franklin({
 	subsets: ["latin"],

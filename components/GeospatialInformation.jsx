@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import Clock from "./Clock";
+import { Clock } from "@/components";
 
-export const GeospatialInformation = () => {
+const GeospatialInformation = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,3 +32,5 @@ export const GeospatialInformation = () => {
     </motion.div>
   );
 };
+
+export default GeospatialInformation;

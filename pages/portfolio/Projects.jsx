@@ -4,7 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import GrowingLine from "@/components/GrowingLine";
+import { GrowingLine } from "@/components/Common";
+
 import AvionFi from "@/components/Projects/AvionFi";
 import SkillSetGo from "@/components/Projects/SkillSetGo";
 import Rooms from "@/components/Projects/Rooms";
