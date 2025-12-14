@@ -41,18 +41,20 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 1.5 }}
+            transition={{ delay: 0.2 }}
           >
             <Image
               src="/misc/contour-pattern.png"
               alt="contour pattern"
               height={500}
-              width={500}
+              width={414}
+              loading="lazy"
+              fetchPriority="low"
               className="absolute top-15 -right-40 rotate-300 filter grayscale opacity-20"
             />
           </motion.div>
           <NameSection />
-          <GrowingLine variant="right" delay={0.8} />
+          <GrowingLine variant="right" delay={0.2} />
           <GrowingLine variant="left" />
         </div>
         <div className="relative col-span-3 sm:col-span-2 row-span-6 h-full w-full flex justify-center">
@@ -65,8 +67,8 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             transition={{
               type: "tween",
-              duration: 2,
-              delay: 1.2,
+              duration: 1,
+              delay: 0.5,
             }}
             className="flex flex-col items-start justify-center sm:gap-2 md:gap-4 p-4 text-vertical"
           >
@@ -85,27 +87,27 @@ const Hero = () => {
               LinkedIn
             </Link>
           </motion.div>
-          <GrowingLine variant="right" delay={1.2} duration={0.8} />
+          <GrowingLine variant="right" delay={0.4} duration={0.2} />
         </div>
         <div className="relative col-span-12 row-span-1 h-full w-full flex items-center">
           <Technologies />
-          <GrowingLine variant="top" delay={1.2} duration={0.8} />
-          <GrowingLine variant="left" delay={1.2} duration={0.8} />
-          <GrowingLine variant="right" delay={2} duration={1} />
-          <GrowingLine variant="bottom" delay={2} duration={1} />
+          <GrowingLine variant="top" delay={0.4} duration={0.2} />
+          <GrowingLine variant="left" delay={0.4} duration={0.2} />
+          <GrowingLine variant="right" delay={0.8} duration={0.4} />
+          <GrowingLine variant="bottom" delay={0.8} duration={0.4} />
         </div>
         <div className="relative col-span-8 row-span-5 h-full w-full flex flex-col justify-end p-4">
           <DescriptionSection />
           <ServicesSection />
           <DetailsSection />
-          <GrowingLine variant="left" delay={2} duration={1} />
-          <GrowingLine variant="right" delay={2.6} duration={0.4} />
+          <GrowingLine variant="left" delay={0.8} duration={0.2} />
+          <GrowingLine variant="right" delay={1.2} duration={0.1} />
         </div>
         <div className="relative col-span-4 row-span-5 h-full w-full flex justify-center overflow-hidden">
           <GeospatialInformation />
-          <GrowingLine variant="right" delay={2.8} duration={1} />
+          <GrowingLine variant="right" delay={1.6} duration={0.2} />
         </div>
-        <GrowingLine variant="bottom" delay={1.2} duration={1.8} />
+        <GrowingLine variant="bottom" delay={0.4} duration={1} />
       </div>
     </section>
   );
@@ -140,7 +142,7 @@ const DescriptionSection = () => {
       initial={{ opacity: 0, translateY: "-25%" }}
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{
-        delay: 2,
+        delay: 0.4,
         ease: "easeInOut",
       }}
       className="absolute top-5 right-5 w-[30%] flex flex-col gap-4"
@@ -159,7 +161,7 @@ const ServicesSection = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 1.5, duration: 1 }}
+      transition={{ delay: 0.8, duration: 0.4 }}
       className="h-fit w-full flex flex-col"
     >
       <Services />
@@ -172,7 +174,7 @@ const DetailsSection = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 1.5, duration: 1 }}
+      transition={{ delay: 0.2, duration: 0.4 }}
       className="h-20 w-full flex flex-row items-center justify-center gap-1 border border-secondary"
     >
       <FadeInLetters className="font-russo text-6xl uppercase">

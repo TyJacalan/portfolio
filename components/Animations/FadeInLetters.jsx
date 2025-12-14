@@ -27,7 +27,7 @@ const createLetterVariant = (direction = "right", distance) => {
       opacity: 1,
       x: hidden.x ? 0 : undefined,
       y: hidden.y ? 0 : undefined,
-      transition: { type: "tween", duration: 1, delay: 1.2 },
+      transition: { type: "tween", duration: 0.8, delay: 0.5 },
     },
   };
 };

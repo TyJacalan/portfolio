@@ -2,15 +2,16 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import { Clock } from "@/components";
+const Clock = dynamic(() => import("./Clock"), { ssr: false });
 
 const GeospatialInformation = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 1.5 }}
+      transition={{ delay: 0.8 }}
       className="relative h-full w-full flex flex-row"
     >
       <div className="z-100 absolute -bottom-20 right-0 pointer-events-none">
@@ -19,6 +20,9 @@ const GeospatialInformation = () => {
           alt="topographic map of Cebu Island"
           height={500}
           width={200}
+          priority
+          loading="eager"
+          fetchPriority="high"
           className="object-contain z-100"
         />
       </div>

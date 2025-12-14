@@ -21,7 +21,7 @@ const Services = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 1.5, duration: 1 }}
+      transition={{ delay: 0.8, duration: 0.4 }}
       className="h-fit w-full flex flex-col"
     >
       <span className="w-fit uppercase font-roboto text-xs text-primary px-2 bg-tertiary shadow-md">

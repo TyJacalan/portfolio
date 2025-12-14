@@ -92,7 +92,7 @@ const Technologies = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 1 }}
+      transition={{ delay: 0.4 }}
       className="flex h-full w-full"
     >
       <ul className="relative text-lg md:text-2xl lg:text-4xl">
@@ -100,7 +100,7 @@ const Technologies = () => {
           <motion.li
             initial={{ x: 0 }}
             whileInView={{ x: 50 * index }}
-            transition={{ type: "tween", duration: 1 * (index / 10), delay: 1 }}
+            transition={{ type: "tween", duration: 0.8 * (index / 10), delay: 0.4 }}
             key={item.name}
             className={`absolute top-1/2 -translate-y-1/2 bg-primary z-${index}`}
           >
