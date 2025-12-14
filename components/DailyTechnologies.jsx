@@ -4,12 +4,14 @@ import Chip from "./Chip";
 const fileTypes = [
   ".rb",
   ".html.erb",
+  ".kotlin",
   ".yaml",
   ".js",
   ".css",
   ".html",
   ".js",
   ".jsx",
+  ".sql"
 ];
 
 const DailyTechnologies = () => {
