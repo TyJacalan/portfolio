@@ -1,15 +1,17 @@
 import React from "react";
-import Chip from "./Chip";
+import { Chip } from "@/components/Common";
 
 const fileTypes = [
   ".rb",
   ".html.erb",
+  ".kotlin",
   ".yaml",
   ".js",
   ".css",
   ".html",
   ".js",
   ".jsx",
+  ".sql"
 ];
 
 const DailyTechnologies = () => {

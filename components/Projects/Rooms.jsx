@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import Chip from "../Chip";
+import { Chip } from "@/components/Common";
 import {
   Dialog,
   DialogTrigger,
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from "../Dialog";
+} from "@/components/Common/Dialog";
 
 import { FaGithub } from "react-icons/fa";
 
