@@ -14,7 +14,7 @@ const GeospatialInformation = () => {
       transition={{ delay: 0.8 }}
       className="relative h-full w-full flex flex-row"
     >
-      <div className="z-100 absolute -bottom-20 right-0 pointer-events-none">
+      <div className="flex-1 z-100 absolute -bottom-20 right-0 pointer-events-none">
         <Image
           src="/misc/cebu-map.png"
           alt="topographic map of Cebu Island"
@@ -30,7 +30,7 @@ const GeospatialInformation = () => {
         <p>Cebu City</p>
         <p>Philippines</p>
       </div>
-      <div className="z-0 w-96 font-russo font-bold text-9xl text-outline break-all overflow-hidden text-primary opacity-50">
+      <div className="z-0 lg:w-64 xl:w-96 font-russo font-bold text-6xl md:text-7xl lg:8xl xl:text-9xl text-outline break-all overflow-hidden text-primary opacity-50">
         <Clock />
       </div>
     </motion.div>

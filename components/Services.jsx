@@ -28,7 +28,7 @@ const Services = () => {
         Click each service below to find out more &#9660;
       </span>
 
-      <div className="flex flex-row items-center justify-start gap-1 border-t border-secondary text-xs">
+      <div className="flex flex-row items-center justify-start gap-1 border-t border-secondary text-xs text-nowrap">
         <h2 onClick={() => setSelected("ideation")} className="cursor-pointer">
           &#9679; Ideation
         </h2>
@@ -46,7 +46,8 @@ const Services = () => {
         >
           Technology Consultation
         </h2>
-
+      </div>
+      <div className="flex flex-row items-center justify-start gap-1 border-t border-secondary text-xs text-nowrap">
         <h2
           onClick={() => setSelected("optimization")}
           className="cursor-pointer"
@@ -62,10 +63,12 @@ const Services = () => {
         </h2>
       </div>
 
-      <div
-        className="flex items-center h-6 text-xs border-t border-secondary bg-accent overflow-hidden"
-      >
-        {selected && <FadeInWords key={selected}>{serviceDescriptions[selected]}</FadeInWords>}
+      <div className="flex items-center h-6 text-xs border-t border-secondary bg-accent overflow-hidden">
+        {selected && (
+          <FadeInWords key={selected}>
+            {serviceDescriptions[selected]}
+          </FadeInWords>
+        )}
       </div>
     </motion.div>
   );

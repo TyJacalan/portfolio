@@ -20,6 +20,8 @@ import {
 import { GrMysql } from "react-icons/gr";
 import { VscAzure } from "react-icons/vsc";
 
+import { useBreakpointMultiplier } from "@/utils/hooks";
+
 const technologyItems = [
   {
     name: "Ruby",
@@ -88,21 +90,27 @@ const technologyItems = [
 ];
 
 const Technologies = () => {
+  const dynamicXPosition = useBreakpointMultiplier();
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.4 }}
-      className="flex h-full w-full"
+      className="hidden md:flex h-full w-full px-4 overflow-hidden"
     >
       <ul className="relative text-lg md:text-2xl lg:text-4xl">
         {technologyItems.map((item, index) => (
           <motion.li
             initial={{ x: 0 }}
-            whileInView={{ x: 50 * index }}
-            transition={{ type: "tween", duration: 0.8 * (index / 10), delay: 0.4 }}
+            whileInView={{ x: dynamicXPosition * index }}
+            transition={{
+              type: "tween",
+              duration: 0.8 * (index / 10),
+              delay: 0.4,
+            }}
             key={item.name}
-            className={`absolute top-1/2 -translate-y-1/2 bg-primary z-${index}`}
+            className="absolute top-1/2 -translate-y-1/2 bg-primary"
+            style={{ zIndex: index }}
           >
             {item.logo}
           </motion.li>

@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="container h-screen flex items-center md:justify-center px-2 text-tertiary"
+      className="container h-screen min-w-[750px] flex items-center md:justify-center px-2 text-tertiary"
     >
       <div className="relative h-[95%] w-full grid grid-cols-12 grid-rows-12">
         <GrowingLine variant="top" />
@@ -119,14 +119,14 @@ const NameSection = () => {
   return (
     <div className="absolute bottom-5 left-5 w-full flex flex-row gap-8">
       <FadeInLetters
-        className="font-thin text-7xl md:text-9xl"
+        className="font-thin text-7xl md:text-8xl xl:text-9xl"
         direction="top"
         distance={400}
       >
         Ty
       </FadeInLetters>
       <FadeInLetters
-        className="font-thin text-7xl md:text-9xl"
+        className="font-thin text-7xl md:text-8xl xl:text-9xl"
         direction="left"
         distance={500}
       >
@@ -145,7 +145,7 @@ const DescriptionSection = () => {
         delay: 0.4,
         ease: "easeInOut",
       }}
-      className="absolute top-5 right-5 w-[30%] flex flex-col gap-4"
+      className="absolute top-5 right-5 w-[40%] flex flex-col gap-4"
     >
       <p className="text-sm">
         I craft premium, tailor-made, and secure websites for businesses and
@@ -175,13 +175,13 @@ const DetailsSection = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.2, duration: 0.4 }}
-      className="h-20 w-full flex flex-row items-center justify-center gap-1 border border-secondary"
+      className="h-fit w-full flex flex-row items-center justify-start gap-1 border border-secondary px-2 overflow-hidden"
     >
-      <FadeInLetters className="font-russo text-6xl uppercase">
+      <FadeInLetters className="font-russo text-3xl xl:text-6xl uppercase">
         SAY HELLO!
       </FadeInLetters>
-      <div className="flex flex-col p-1 justify-center">
-        <FadeInLetters className="font-roboto text-sm">
+      <div className="flex flex-col p-1 justify-center text-xs xl:text-sm">
+        <FadeInLetters className="font-roboto">
           tyrone.jacalan@pm.me
         </FadeInLetters>
         <FadeInLetters className="font-bitcount">
@@ -191,17 +191,17 @@ const DetailsSection = () => {
       <div className="h-full flex flex-row items-center justify-center gap-1">
         <div className="flex items-center justify-center h-full w-4 overflow-hidden">
           <div className="rotate-270 font-bold">
-            <FadeInLetters direction="top" className="text-[0.5rem] uppercase">
+            <FadeInLetters direction="top" className="text-[0.35rem] xl:text-[0.5rem] uppercase">
               DEVELOPING
             </FadeInLetters>
           </div>
         </div>
-        <FadeInLetters className="font-russo text-7xl leading-0 uppercase">
+        <FadeInLetters className="font-russo text-4xl xl:text-7xl leading-0 uppercase">
           SINCE
         </FadeInLetters>
-        <div className="flex flex-col -space-y-3 mt-2">
-          <FadeInLetters className="font-bitcount text-4xl">20</FadeInLetters>
-          <FadeInLetters className="font-bitcount text-4xl">24</FadeInLetters>
+        <div className="flex flex-col -space-y-3 mt-1 xl:mt-2 font-bitcount text-xl xl:text-4xl">
+          <FadeInLetters>20</FadeInLetters>
+          <FadeInLetters>24</FadeInLetters>
         </div>
       </div>
     </motion.div>
